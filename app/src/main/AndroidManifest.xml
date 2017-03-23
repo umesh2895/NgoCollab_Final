@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ngocollab">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".slider.SliderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".dashboard.DashboardActivity"
+            android:label="NGO Collab">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.LoginActivity"
+            android:label="Login"
+            android:theme="@style/ThemeWhite">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.OTPActivity"
+            android:label="OTP"
+            android:theme="@style/ThemeWhite">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".signup.RegisterActivity"
+            android:label="Register"
+            android:theme="@style/ThemeWhite">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".signup.GetLocationActivity"
+            android:label="Register"
+            android:theme="@style/ThemeWhite">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".dashboard.EditProfileActivity"
+            android:parentActivityName=".dashboard.DashboardActivity">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".dashboard.ExpandedNGOListActivity"
+            android:label="Popular NGOs"
+            android:parentActivityName=".dashboard.DashboardActivity">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:label="GreenPeace India"
+            android:name=".ngo.NGOActivity">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:label="Event Name"
+            android:name=".event.EventActivity">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:label="About Us"
+            android:name=".AboutUs">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:label="Settings"
+            android:name=".Settings">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:label="Explore NGOs"
+            android:name=".dashboard.ExploreNgoActivity">
+        </activity>
+
+    </application>
+
+</manifest>

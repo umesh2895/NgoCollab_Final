@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/membersicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile_icon_for_member_tab" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/membersicon"
+        android:layout_toRightOf="@+id/membersicon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/members_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Abhishek Saitwal"
+            android:textColor="@color/colorPrimaryText" />
+
+        <TextView
+            android:id="@+id/members_designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manager"
+            android:textColor="@color/colorSecondaryText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorSecondaryText" />
+
+    </LinearLayout>
+
+</RelativeLayout>
